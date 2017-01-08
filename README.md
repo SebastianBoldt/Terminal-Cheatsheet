@@ -7,14 +7,13 @@ My personal cheatsheet to the Mac OS Terminal (under construction 🚧👷)
 In order to use commands you'll need a program that reads and executes them. That program
 is called shell, which runs inside the Terminal. Some commands are builtin and some commands are external programs. You can check that by using the **type** command.
 
-###Selected Features 
-####Wildcards
+###Wildcards
 | Command | Description |
 | ----------- | ----------- |
 | ls a\* | List all Files that begin with lowercase a |
 | ls \*20 | List files that end with 20 |
 
-#### Shell variables 
+### Shell variables 
 You can define a shell variables and their values by assigning them:
 **VAR=3**
 Print it out using a leading $
@@ -39,13 +38,20 @@ Use **printenv** to print all of them.
 If you want to create an environment variable that is available to all programms started from that shell you need to use 
 **export VAR=3** or **export VAR** if you previously defined VAR.
 
-####Search path
+###Search path
 Programs are scattered all over the filesystem, in directories like /bin and /usr/bin. The variable **PATH** tells the shell where to look.**PATH** is a sequence of directories separated by colons
 
 Modify it using: 
 **PATH=$PATH:/your/directory**
 
 if you want to make it permanent you need to put that command into your **.bash_profile**
+
+###Aliases
+**alias ll='ls -l'**
+
+**unalias ll**
+
+To make it permanent put it into your .bash_profile
 
 ##Filesystem
 | Command | Description |
