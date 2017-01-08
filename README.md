@@ -15,9 +15,14 @@ is called shell, which runs inside the Terminal. Some commands are builtin and s
 
 ### Shell variables 
 You can define a shell variables and their values by assigning them:
-**VAR=3**
+``` 
+VAR=3 
+```
 Print it out using a leading $
-**echo $VAR**
+
+``` 
+echo $VAR
+```
 
 The Shell comes with some default Variables.
 
@@ -36,7 +41,17 @@ The Shell comes with some default Variables.
 
 Use **printenv** to print all of them.
 If you want to create an environment variable that is available to all programms started from that shell you need to use 
-**export VAR=3** or **export VAR** if you previously defined VAR.
+``` 
+export VAR=3 
+``` 
+
+or 
+
+``` 
+export VAR
+``` 
+
+if you previously defined VAR.
 
 ###Search path
 Programs are scattered all over the filesystem, in directories like /bin and /usr/bin. The variable **PATH** tells the shell where to look.**PATH** is a sequence of directories separated by colons
@@ -47,11 +62,15 @@ Modify it using:
 if you want to make it permanent you need to put that command into your **.bash_profile**
 
 ###Aliases
-**alias ll='ls -l'**
+``` 
+alias ll='ls -l'
+```
 
-**unalias ll**
+```
+unalias ll
+```
 
-To make it permanent put it into your .bash_profile
+To make it permanent put it into your **.bash_profile**
 
 ##Filesystem
 | Command | Description |
@@ -65,7 +84,10 @@ To make it permanent put it into your .bash_profile
 
 ##File Protection
 
-Example: -rw-r--r--
+Example:
+``` 
+-rw-r--r--
+```
 
 | Postion | Meaning |
 | ----------- | ----------- |
