@@ -1,5 +1,5 @@
 # Cheat
-A cheatsheet to the Mac OS Terminal (under construction 🚧👷)
+My personal cheatsheet to the Mac OS Terminal (under construction 🚧👷)
 
 ![Cheat: Terminal Cheatsheet](https://raw.githubusercontent.com/SebastianBoldt/Cheat/master/terminal.png)
 
@@ -38,6 +38,14 @@ The Shell comes with some default Variables.
 Use **printenv** to print all of them.
 If you want to create an environment variable that is available to all programms started from that shell you need to use 
 **export VAR=3** or **export VAR** if you previously defined VAR.
+
+####Search path
+Programs are scattered all over the filesystem, in directories like /bin and /usr/bin. The variable **PATH** tells the shell where to look.**PATH** is a sequence of directories separated by colons
+
+Modify it using: 
+**PATH=$PATH:/your/directory**
+
+if you want to make it permanent you need to put that command into your **.bash_profile**
 
 ##Filesystem
 | Command | Description |
