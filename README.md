@@ -1,4 +1,4 @@
-# Terminal-Cheatsheet
+# Terminal-Cheatsheet // Bash and ZSH
 My personal cheatsheet to the Mac OS Terminal (under construction 🚧👷)
 
 ![Cheat: Terminal Cheatsheet](https://raw.githubusercontent.com/SebastianBoldt/Cheat/master/terminal.png)
@@ -59,7 +59,7 @@ Programs are scattered all over the filesystem, in directories like /bin and /us
 Modify it using: 
 **PATH=$PATH:/your/directory**
 
-if you want to make it permanent you need to put that command into your **.bash_profile**
+if you want to make it permanent you need to put that command into your **.bash_profile** or **.zshrc**
 
 ###Aliases
 ``` 
@@ -70,7 +70,20 @@ alias ll='ls -l'
 unalias ll
 ```
 
-To make it permanent put it into your **.bash_profile**
+To make it permanent put it into your **.bash_profile** or **.zshrc**
+
+###Input & Output redirection 
+
+The shell can redirect standard in, standard out and standard error to and from files.
+Any command that reads from standard input can read from a file instead with the shells **<**, **>** and **2>** operator
+
+| Command | Description |
+| ----------- | ----------- |
+| command < infile | command should read from file |
+| command > outfile | command should write to a file |
+| command >> outfile | command should append its output to file |
+| command 2> errorfile | write standard error to file & stream |
+| command > outfile 2> errorFile | write to outfile and things the command writes to stderror will be redirected to errorFile |
 
 ##Filesystem
 | Command | Description |
