@@ -90,6 +90,14 @@ Any command that reads from standard input can read from a file instead with the
 | command 2> errorfile | write standard error to file & stream |
 | command > outfile 2> errorFile | write to outfile and things the command writes to stderror will be redirected to errorFile |
 
+##Pipes 
+Redirection of standard input of one command can be redirected to another command using the **|** operator.
+
+| Command | Description |
+| ----------- | ----------- |
+| ls \| wc -l | redirect ls output to word count command |
+| ls -1 \| cut -d. -f2 \| sort | Show all file types |
+
 ##Filesystem
 | Command | Description |
 | ----------- | ----------- |
