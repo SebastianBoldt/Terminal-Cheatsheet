@@ -7,6 +7,11 @@ My personal cheatsheet to the Mac OS Terminal (under construction 🚧👷)
 In order to use commands you'll need a program that reads and executes them. That program
 is called shell, which runs inside the Terminal. Some commands are builtin and some commands are external programs. You can check that by using the **type** command.
 
+| Command | Output |
+| ----------- | ----------- |
+| type ls | ls is an alias for ls -G |
+| type pod | pod is Users/username/.rvm/gems/ruby-2.0.0-p247/bin/pod |
+
 ###Wildcards
 | Command | Description |
 | ----------- | ----------- |
