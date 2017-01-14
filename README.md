@@ -1,4 +1,4 @@
-# Terminal-Cheatsheet // Bash and ZSH
+# Terminal-Cheatsheet
 My personal cheatsheet to the Mac OS Terminal (under construction 🚧👷)
 
 ![Cheat: Terminal Cheatsheet](https://raw.githubusercontent.com/SebastianBoldt/Cheat/master/terminal.png)
