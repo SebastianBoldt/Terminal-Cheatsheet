@@ -98,6 +98,13 @@ Redirection of standard input of one command can be redirected to another comman
 | ls \| wc -l | redirect ls output to word count command |
 | ls -1 \| cut -d. -f2 \| sort | Show all file types |
 
+##Combining Commands 
+| Command | Description |
+| ----------- | ----------- |
+| command1 ; command2 | If anyone fails, the sequence continues |
+| command1 && command2 | The sequence will stop if any command fails |
+| command1 \|\| command2 | The sequence will stop if one command succeeded |
+
 ##Filesystem
 | Command | Description |
 | ----------- | ----------- |
