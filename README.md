@@ -105,6 +105,22 @@ Redirection of standard input of one command can be redirected to another comman
 | command1 && command2 | The sequence will stop if any command fails |
 | command1 \|\| command2 | The sequence will stop if one command succeeded |
 
+###Quoting & Escaping 
+If you want a word contain whitspaced you need to surround it with single or double quotes to make the shell treat it as a unit.
+Double quotes will result in evaluating the actual content and replacing shell variables with there actual content.
+
+| Command | Description |
+| ----------- | ----------- |
+| wc 'Value of PATH: $PATH' | Will print "Value of PATH: $PATH" |
+| wc "Value of PATH: $PATH" | Will print "Value of PATH: /users/sebastian/.." |
+
+If a character has a special meaning to the shell but you want it used literally, precede the character with a backslash \
+
+| Command | Description |
+| ----------- | ----------- |
+| echo a\\* | Will print **a***, so * will not be interpreted as the wildcard symbol |
+
+
 ##Filesystem
 | Command | Description |
 | ----------- | ----------- |
