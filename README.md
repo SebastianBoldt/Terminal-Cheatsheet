@@ -120,6 +120,22 @@ If a character has a special meaning to the shell but you want it used literally
 | ----------- | ----------- |
 | echo a\\* | Will print **a***, so * will not be interpreted as the wildcard symbol |
 
+###Command History 
+The shell allows you to recall previous commands. All commands you are entered are stored inside the command history. Here are some handy command you can use for it 
+
+| Command | Description |
+| ----------- | ----------- |
+| history | print your history |
+| history N | print most recent n commands |
+| history -c| clear your history |
+| !! | re run previous command |
+| !N | rerun command N in history |
+| !-N | rerun command you typed n times ago |
+| !$| last parameter from previous command |
+| !* | all parameters from last command |
+| up arrow | go to previous command |
+| down arrow | go to next command |
+
 
 ##Filesystem
 | Command | Description |
