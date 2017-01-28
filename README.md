@@ -1,5 +1,5 @@
 # Terminal-Cheatsheet
-My personal cheatsheet to the Mac OS Terminal 
+My personal cheatsheet for the Mac OS Terminal 
 
 ![Cheat: Terminal Cheatsheet](https://raw.githubusercontent.com/SebastianBoldt/Cheat/master/terminal.png)
 
