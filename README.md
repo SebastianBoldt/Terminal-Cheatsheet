@@ -136,7 +136,7 @@ The shell allows you to recall previous commands. All commands you are entered a
 | up arrow | go to previous command |
 | down arrow | go to next command |
 
-##Jobs 
+###Jobs 
 
 All shells have job control: the ability to run programs in the background (multitasking) und foreground (running as the active process at your shell). Jobs are higher level than processes.
 
@@ -172,3 +172,7 @@ Example:
 | 2-4 | Owner permissions, read, write, and execute permissions for the files's owner |
 | 5-7 | Group permissions, read, write, and execute permissions for the files's group |
 | 8-10 | World permissions, read, write, and execute permissions for all other users |
+
+##Commands
+
+....
