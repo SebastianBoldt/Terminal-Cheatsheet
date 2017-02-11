@@ -136,6 +136,18 @@ The shell allows you to recall previous commands. All commands you are entered a
 | up arrow | go to previous command |
 | down arrow | go to next command |
 
+##Jobs 
+
+All shells have job control: the ability to run programs in the background (multitasking) und foreground (running as the active process at your shell). Jobs are higher level than processes.
+
+| Command | Description |
+| ----------- | ----------- |
+| jobs | List your Jobs |
+| emacs myfile & | put emacs to the background |
+| ^Z | suspend the current forground job |
+| bg [%jobnumber] | send suspended job to the background |
+| fg [%jobnumber] | bring it into the foreground |
+| suspend | make supsended job run in the background |
 
 ##Filesystem
 | Command | Description |
