@@ -58,7 +58,7 @@ export VAR
 
 if you previously defined VAR.
 
-###Search path
+### Search path
 Programs are scattered all over the filesystem, in directories like /bin and /usr/bin. The variable **PATH** tells the shell where to look.**PATH** is a sequence of directories separated by colons
 
 Modify it using: 
@@ -77,7 +77,7 @@ unalias ll
 
 To make it permanent put it into your **.bash_profile** or **.zshrc**
 
-###Input & Output redirection 
+### Input & Output redirection 
 
 The shell can redirect standard in, standard out and standard error to and from files.
 Any command that reads from standard input can read from a file instead with the shells **<**, **>** and **2>** operator
@@ -90,7 +90,7 @@ Any command that reads from standard input can read from a file instead with the
 | command 2> errorfile | write standard error to file & stream |
 | command > outfile 2> errorFile | write to outfile and things the command writes to stderror will be redirected to errorFile |
 
-###Pipes 
+### Pipes 
 Redirection of standard input of one command can be redirected to another command using the **|** operator.
 
 | Command | Description |
@@ -98,14 +98,14 @@ Redirection of standard input of one command can be redirected to another comman
 | ls \| wc -l | redirect ls output to word count command |
 | ls -1 \| cut -d. -f2 \| sort | Show all file types |
 
-###Combining Commands 
+### Combining Commands 
 | Command | Description |
 | ----------- | ----------- |
 | command1 ; command2 | If anyone fails, the sequence continues |
 | command1 && command2 | The sequence will stop if any command fails |
 | command1 \|\| command2 | The sequence will stop if one command succeeded |
 
-###Quoting & Escaping 
+### Quoting & Escaping 
 If you want a word contain whitspaced you need to surround it with single or double quotes to make the shell treat it as a unit.
 Double quotes will result in evaluating the actual content and replacing shell variables with there actual content.
 
@@ -120,7 +120,7 @@ If a character has a special meaning to the shell but you want it used literally
 | ----------- | ----------- |
 | echo a\\* | Will print **a***, so * will not be interpreted as the wildcard symbol |
 
-###Command History 
+### Command History 
 The shell allows you to recall previous commands. All commands you are entered are stored inside the command history. Here are some handy command you can use for it 
 
 | Command | Description |
@@ -136,7 +136,7 @@ The shell allows you to recall previous commands. All commands you are entered a
 | up arrow | go to previous command |
 | down arrow | go to next command |
 
-###Jobs 
+### Jobs 
 
 All shells have job control: the ability to run programs in the background (multitasking) und foreground (running as the active process at your shell). Jobs are higher level than processes.
 
@@ -149,7 +149,7 @@ All shells have job control: the ability to run programs in the background (mult
 | fg [%jobnumber] | bring it into the foreground |
 | suspend | make supsended job run in the background |
 
-##Filesystem
+## Filesystem
 | Command | Description |
 | ----------- | ----------- |
 | cd | change to your home directory |
@@ -159,7 +159,7 @@ All shells have job control: the ability to run programs in the background (mult
 | pwd | print name of current working directory |
 | echo ~ | print path of home directory |
 
-##File Protection
+## File Protection
 
 Example:
 ``` 
@@ -173,6 +173,6 @@ Example:
 | 5-7 | Group permissions, read, write, and execute permissions for the files's group |
 | 8-10 | World permissions, read, write, and execute permissions for all other users |
 
-##Commands
+## Commands
 
 ....
