@@ -3,7 +3,7 @@ My personal cheatsheet for the Mac OS Terminal
 
 ![Cheat: Terminal Cheatsheet](https://raw.githubusercontent.com/SebastianBoldt/Cheat/master/terminal.png)
 
-##The Shell
+## The Shell
 In order to use commands you'll need a program that reads and executes them. That program
 is called shell, which runs inside the Terminal. Some commands are builtin and some commands are external programs. You can check that by using the **type** command.
 
@@ -12,7 +12,7 @@ is called shell, which runs inside the Terminal. Some commands are builtin and s
 | type ls | ls is an alias for ls -G |
 | type pod | pod is Users/username/.rvm/gems/ruby-2.0.0-p247/bin/pod |
 
-###Wildcards
+### Wildcards
 | Command | Description |
 | ----------- | ----------- |
 | ls a\* | List all Files that begin with lowercase a |
