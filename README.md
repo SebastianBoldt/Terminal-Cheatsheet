@@ -66,7 +66,7 @@ Modify it using:
 
 if you want to make it permanent you need to put that command into your **.bash_profile** or **.zshrc**
 
-###Aliases
+### Aliases
 ``` 
 alias ll='ls -l'
 ```
