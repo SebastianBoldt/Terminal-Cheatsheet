@@ -75,8 +75,6 @@ alias ll='ls -l'
 unalias ll
 ```
 
-To make it permanent put it into your **.bash_profile** or **.zshrc**
-
 ### Input & Output redirection 
 
 The shell can redirect standard in, standard out and standard error to and from files.
